@@ -1,4 +1,4 @@
-# React useded Timer web page
+# React useded Web page
 
 리액트를 활용하여 기존의 HTML 페이지를 변환하여 제작한 연습용 웹페이지 입니다.
 - URL : https://juho-jin.github.io/Project5_ReactWeb/
