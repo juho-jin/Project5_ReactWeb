@@ -1,0 +1,125 @@
+/*전체적용사항*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*레이아웃*/
+nav {
+    background-color: #1B36E5;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+nav li {
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    color: brown;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+header {
+    background-color: #0091FF;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px;
+    color:aliceblue;
+}
+
+
+
+header>section {
+    display: flex;
+    font-size: 20px;
+}
+
+.header_left,
+.header_right {
+    width: 100%;
+}
+
+.header_left {
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.header_right {
+    width: 70%;
+    font-size: 1em;
+}
+
+main {
+    background-color: #00CBFA;
+    display: flex;
+
+}
+
+main>section {
+    width: 25%;
+    margin: 20px;
+    text-align: center;
+}
+
+img {
+    border-radius: 40%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5BFBD8;
+    bottom:0;
+    position: sticky;
+}
+
+footer>ul {
+    list-style: none;
+}
+
+@media only screen and (max-width:600px) {
+    header > section {
+        flex-direction: column;
+        align-items:center;
+    }
+    .header_left,
+    .header_right {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+    main>section {
+        width:100%;
+        text-align: center;
+    }
+
+    footer>ul {
+        display: none;
+    }
+}
